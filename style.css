@@ -354,13 +354,6 @@ body {
 
 
 /* Mouse-Following Glow Effect */
-#app-container {
-    position: relative;
-    z-index: 1;
-    position: relative;
-    z-index: 1;
-}
-
 #app-container::before {
     content: '';
     position: absolute;

@@ -62,21 +62,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- Navigation Icons ---
-    const navIcons = document.querySelectorAll('.nav-icons .icon');
-    if (navIcons) {
-        const messages = [
-            'Search functionality not implemented.',
-            'Cart functionality not implemented.',
-            'Profile functionality not implemented.'
-        ];
-
-        navIcons.forEach((icon, index) => {
-            icon.addEventListener('click', () => {
-                if (messages[index]) {
-                    alert(messages[index]);
-                }
-            });
+    // --- Prevent Page Jump on Header Links ---
+    const headerLinks = document.querySelectorAll('header a');
+    headerLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
         });
-    }
+    });
 });
