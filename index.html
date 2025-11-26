@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuraLens | Glassmorphism Product Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="app-container">
+        <!-- Header / Navigation -->
+        <header class="glass-nav">
+            <nav class="breadcrumb">
+                <a href="#">Home</a>
+                <span>/</span>
+                <a href="#">Electronics</a>
+                <span>/</span>
+                <a href="#">Headphones</a>
+                <span>/</span>
+                <a href="#" class="active">AuraLens</a>
+            </nav>
+            <div class="nav-icons">
+                <a href="#" class="icon-link">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                </a>
+                <a href="#" class="icon-link">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l-1.5 8H6.5L5 9z"></path></svg>
+                </a>
+                <a href="#" class="icon-link">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                </a>
+            </div>
+        </header>
+
+        <!-- Main Product Section -->
+        <main class="product-main">
+            <!-- Left Panel: Product Render -->
+            <section class="product-gallery glass-card">
+                <div class="product-image-container">
+                    <!-- Placeholder for a 3D product render -->
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=1080" alt="High-end 3D Product Render" class="product-image">
+                </div>
+            </section>
+
+            <!-- Right Panel: Product Info -->
+            <section class="product-info-panel">
+                <div class="info-content glass-card">
+                    <h1 class="product-title">AuraLens Pro</h1>
+                    <p class="product-description">
+                        Experience sound like never before. The AuraLens Pro combines revolutionary audio technology with a weightless, ergonomic design for unparalleled comfort and immersion.
+                    </p>
+
+                    <div class="divider"></div>
+
+                    <div class="color-selector">
+                        <h2 class="selector-title">Choose your color</h2>
+                        <div class="color-chips">
+                            <div class="color-chip active" data-color="pearl-white" style="background-color: #f0f0f0;"></div>
+                            <div class="color-chip" data-color="ice-blue" style="background-color: #d1e5f0;"></div>
+                            <div class="color-chip" data-color="onyx-black" style="background-color: #333;"></div>
+                            <div class="color-chip" data-color="quartz-rose" style="background-color: #f5d7d7;"></div>
+                        </div>
+                    </div>
+
+                    <div class="price-section">
+                        <span class="price">$799.00</span>
+                        <span class="tax-info">inc. VAT and delivery</span>
+                    </div>
+
+                    <button class="add-to-cart-btn">
+                        <span>Add to Cart</span>
+                    </button>
+                </div>
+            </section>
+        </main>
+
+        <!-- Specs Module -->
+        <footer class="specs-module">
+            <div class="spec-card glass-card-small">
+                <!-- Placeholder for icon -->
+                <svg class="spec-icon" viewBox="0 0 24 24"><path d="M9 19V6.903a2 2 0 012-2h2a2 2 0 012 2V19M9 12h6"></path></svg>
+                <p>32-Hour Battery</p>
+            </div>
+            <div class="spec-card glass-card-small">
+                 <svg class="spec-icon" viewBox="0 0 24 24"><path d="M9 17v-2m5-11v2m-2 2v2m-5-2v2m-2-2v2M5 7h14a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V9a2 2 0 012-2z"></path></svg>
+                <p>Spatial Audio</p>
+            </div>
+            <div class="spec-card glass-card-small">
+                 <svg class="spec-icon" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                <p>Wireless Charging</p>
+            </div>
+             <div class="spec-card glass-card-small">
+                <svg class="spec-icon" viewBox="0 0 24 24"><path d="M5 3v4M3 5h4M6 17v4m-2-2h4m11-1a9 9 0 01-18 0 9 9 0 0118 0z"></path></svg>
+                <p>AI Noise Cancel</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
