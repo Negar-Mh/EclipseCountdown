@@ -48,4 +48,35 @@ document.addEventListener('DOMContentLoaded', () => {
         productImage.style.transition = 'transform 0.5s ease';
     });
 
+    // --- Add to Cart Button ---
+    const addToCartButton = document.querySelector('.add-to-cart-btn');
+    if (addToCartButton) {
+        const buttonText = addToCartButton.querySelector('span');
+        const originalText = buttonText.textContent;
+
+        addToCartButton.addEventListener('click', () => {
+            buttonText.textContent = 'Added!';
+            setTimeout(() => {
+                buttonText.textContent = originalText;
+            }, 2000); // Revert back after 2 seconds
+        });
+    }
+
+    // --- Navigation Icons ---
+    const navIcons = document.querySelectorAll('.nav-icons .icon');
+    if (navIcons) {
+        const messages = [
+            'Search functionality not implemented.',
+            'Cart functionality not implemented.',
+            'Profile functionality not implemented.'
+        ];
+
+        navIcons.forEach((icon, index) => {
+            icon.addEventListener('click', () => {
+                if (messages[index]) {
+                    alert(messages[index]);
+                }
+            });
+        });
+    }
 });
