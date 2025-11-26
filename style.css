@@ -132,6 +132,11 @@ body {
     transform: scale(1.1);
 }
 
+.icon-link:active .icon {
+    transform: scale(0.95);
+    transition: transform 100ms ease;
+}
+
 /* Product Gallery */
 .product-image-container {
     position: relative;
